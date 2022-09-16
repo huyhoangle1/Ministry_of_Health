@@ -17,13 +17,14 @@ module.exports = {
       email: {
         type: Sequelize.STRING
       },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+      address: {
+        type: Sequelize.STRING
       },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+      gender: {
+        type: Sequelize.BOOLEAN
+      },
+      roleid:{
+        type: Sequelize.STRING
       }
     });
   },
