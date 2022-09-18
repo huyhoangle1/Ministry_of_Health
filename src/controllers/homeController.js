@@ -1,4 +1,3 @@
-const { request } = require("express")
 import db from '../models/index'
 
 let getHomePage = async(res, req) =>{
@@ -10,10 +9,14 @@ let getHomePage = async(res, req) =>{
     } catch (error) {
         console.log(error);
     }
-
 }
+let getCrud = (req, res) => {
+    return res.render('crud.ejs')
+  }
+
 
 
 module.exports ={
     getHomePage: getHomePage,
+    getCrud: getCrud,
 }
